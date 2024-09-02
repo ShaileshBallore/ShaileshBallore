@@ -1,0 +1,23 @@
+// continue statement
+
+#include<stdio.h>
+int main()
+{
+    printf("Hello world\n");
+    int i,age;
+    for(i = 0; i < 10;i++){
+        printf("%d\n enter your age \n",i);
+        scanf("%d",&i);
+        if(age > 10){
+            continue;
+        }
+    printf("we have not come across any continue statement\n");
+    printf("we have not come across any continue statement\n");
+    printf("we have not come across any continue statement\n");
+    printf("we have not come across any continue statement\n");
+    printf("harry is good boy");
+  }
+
+
+return 0;
+}
