@@ -1,0 +1,74 @@
+
+#include <stdio.h>
+
+int main() {
+    int a;
+    printf(" Enter either 0 or 1");
+    scanf("%d",&a);
+    if(a == 1){
+        printf("Number 1 is entered !");}
+        else{
+            if(a == 0){
+                printf("Number 1 is entered");
+            }
+        
+      else  {
+          
+            printf("wrong input");
+      }
+        }
+    return 0;
+}
+
+// You can vote or not
+
+#include <stdio.h>
+
+int main() {
+    int age;
+    printf("Enter your age\n");
+    scanf("%d" , &age);
+    printf("You have entered %d as your age \n",age);
+    if(age >= 18){
+        printf("you can vote!");
+    }
+    else if(age >= 10) {
+        printf("You are between 10 to 18 and you can vote for kids\n");
+        }
+    else if (age >=3){
+        printf("You are between 3 to 1o you can vote for babies\n");}
+        else {
+            printf("you can note vote!");
+        }
+    
+    
+    return 0;
+}
+//switch function use cases run
+
+
+#include <stdio.h>
+
+int main() {
+    int i = 5;
+    
+    switch(i){
+        case 5:
+        printf("value is 7");
+        break;
+        
+        case 0 :
+        printf("value is 8");
+        
+        case 9:
+        printf("value is 9");
+        break;
+        default :
+        printf("value is not present");
+        break ;
+    }
+  
+    
+    
+    return 0;
+}
