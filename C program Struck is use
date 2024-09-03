@@ -1,0 +1,20 @@
+///#34 program 
+
+#include <stdio.h>
+struct book {
+    char title[20];
+    char Authaor_name[100];
+    float price;
+    int page;
+} ;
+int main()
+{
+    struct book book1 = {"Cprograming","ABC",130.00,550};
+    printf("\n Title = %s",book1.title);
+    printf("\n Num = %s",book1.Authaor_name);
+    printf("\n price = %.2d",book1.price);
+    printf("\n page = %d",book1.page);
+    
+    return 0;
+    
+}
