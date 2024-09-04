@@ -1,0 +1,71 @@
+#include <stdio.h>
+int main()
+{
+    char input;
+    float kmTOmm = 1000;
+    float inchesTofoot = 0.0831;
+    float cmToin = 0.393;
+    float poundTokg = 0.453;
+    float inchesTometer = 0.025;
+    float first,second;
+    
+    while(1)
+    {
+        printf("Enter the input character .q to quit \n  1.km To mm\n  2.inches To foot\n   3.cm To inches\n   4.inches To meter\n  5.inches to meters\n");
+        scanf("%c",&input);
+        
+        //printf("The characeter is'%c'",input);
+    
+        switch(input)
+        {
+            case'q':
+            printf("Quitting the program.....");
+            goto end;
+            break;
+            
+            case'1':
+            printf("Enter quantity in terms of first unit\n");
+            scanf("%f",&first);
+            second= first * kmTOmm;
+            printf("%.2f km is equal to %.2f mm\n\n\n",first,second);
+            break;
+            
+            case'2':
+            printf("Enter quantity in terms of first unit\n");
+            scanf("%f",&first);
+            second = first*inchesTofoot;
+            printf("%f inches is equal to %f foot\n",first,second);
+            
+            break;
+            case'3':
+            printf("Enter quantity in term of first unit \n");
+            scanf("%f",first);
+            second = first*cmToin;
+            printf("%f cm is equal to %f inches\n",first,second);
+            break;
+            
+            case'4':
+            printf("Enter quantity in term of first unit\n");
+            scanf("%f",&first);
+            second = first*poundTokg;
+            printf("%f pound is equal to kg %f\n",first,second);
+            
+            break;
+            
+            case'5':
+            printf("Enter quantity in term of first unit\n");
+            scanf("%f",&first);
+            second=first*inchesTometer;
+            printf("%f inches equal to %f meters\n",first,second);
+            
+            break;
+            default:
+            printf("in default now");
+            break;
+            
+        }
+    }
+    end:
+    
+    return 0;
+}
