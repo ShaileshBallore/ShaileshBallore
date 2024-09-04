@@ -1,0 +1,26 @@
+#include <stdio.h>
+struct book{
+    char title[20];
+    char Author_name[100];
+    float price;
+    int pages;
+};
+int main()
+{
+    struct book book1={"C Programing","Shailesh",400,550};
+    printf("\nTitale=%s",book1.title);
+    printf("\n Num = %s",book1.Author_name);
+    printf("\n price = %d",book1.price);
+    printf("\n page=%d",book1.pages);
+    return 0;
+}
+
+//OUTPUT
+/tmp/j3JcU6i5Wc.o
+
+Titale=C Programing
+ Num = Shailesh
+ price = 4202521
+ page=550
+
+=== Code Execution Successful ===
